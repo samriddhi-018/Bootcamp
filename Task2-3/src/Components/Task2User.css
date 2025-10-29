@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width:100vw;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(tobottom, #fa6a6a, #f7c2c2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 350px;
+  min-height: 350px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 0.9rem;
+}
+
+.update-btn, .save-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.update-btn:hover, .save-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.avatar-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.avatar-choice {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.avatar-choice:hover {
+  border: 2px solid #007bff;
+}
+
+.avatar-choice.selected {
+  border: 2px solid #007bff;
+}
+
+.add-user-btn {
+  margin-bottom: 20px;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.add-user-btn:hover {
+  background-color: #218838;
+}
+
+.remove-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.add-user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add-user-form input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 0.9rem;
+  width: 250px;
+  height:25px;
+}
