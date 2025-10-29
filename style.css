@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('Task1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Task1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(8px); 
+  z-index: -1; 
+}
+
+.container {
+  max-width: 600px; 
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  background: #f7f7f7;
+  padding: 30px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+
+}
+
+h1 {
+  text-align: center;
+}
+h5{
+  text-align: end;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  width:50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(123, 123, 194);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ebe3e3;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+li button {
+  background: #a19a9a;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
